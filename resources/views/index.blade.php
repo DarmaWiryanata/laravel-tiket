@@ -14,9 +14,9 @@
       <div class="carousel-inner" role="listbox">
         <!-- Slide One - Set the background image for this slide in the line below -->
         <div class="carousel-item active" style="background-image: url('https://source.unsplash.com/LAaSoL0LrYs/1920x1080')">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption">
             <h2 class="display-4">Tiket</h2>
-            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia nesciunt, ipsa tempore molestiae, ex nobis sunt quam error commodi sint magnam cupiditate eius, minus illum reiciendis voluptatum expedita dolorum. Doloremque?</p>
+            <p class="lead d-none d-md-block">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia nesciunt, ipsa tempore molestiae, ex nobis sunt quam error commodi sint magnam cupiditate eius, minus illum reiciendis voluptatum expedita dolorum. Doloremque?</p>
             <br />
             <a href="#section-2">
                 <button type="button" class="btn btn-outline-neutral btn-round">Tentang Kami</button>
@@ -25,9 +25,9 @@
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('https://source.unsplash.com/bF2vsubyHcQ/1920x1080')">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption">
             <h2 class="display-4">Acara Terkini</h2>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat vel ex, voluptas fugit quidem doloremque non dolor eligendi neque architecto quasi maxime inventore veniam, perferendis harum! Ratione fugit deserunt reiciendis.</p>
+            <p class="lead d-none d-md-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat vel ex, voluptas fugit quidem doloremque non dolor eligendi neque architecto quasi maxime inventore veniam, perferendis harum! Ratione fugit deserunt reiciendis.</p>
             <br />
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-outline-neutral btn-round"><i class="fa fa-play"></i>Lihat video</a>
             <a href="">
@@ -184,4 +184,5 @@
         </div>
     </div>
 </div>
+@include('layouts.footer')
 @endsection

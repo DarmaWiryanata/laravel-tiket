@@ -21,7 +21,6 @@
         <div class="wrapper">
             @yield('content')
         </div>
-        @include('layouts.footer')
     </body>
     <!-- Core JS Files -->
     <script src="{{ asset('js/core/jquery.min.js') }}" type="text/javascript"></script>

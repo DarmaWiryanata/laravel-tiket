@@ -22,10 +22,10 @@
                     <a href="#" class="nav-link"><i class="fas fa-info-circle d-lg-none"></i> {{ __('custom.about') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link"><i class="fas fa-sign-in-alt d-lg-none"></i> {{ __('custom.login') }}</a>
+                    <a href="{{ route('login') }}" class="nav-link"><i class="fas fa-sign-in-alt d-lg-none"></i> {{ __('custom.login') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a href="https://www.creative-tim.com/product/paper-kit-2-pro?ref=pk2-free-local" target="_blank" class="btn btn-danger btn-round"><i class="fas fa-user-plus d-lg-none"></i> {{ __('custom.register') }}</a>
+                    <a href="{{ route('register') }}" class="btn btn-danger btn-round"><i class="fas fa-user-plus d-lg-none"></i> {{ __('custom.register') }}</a>
                 </li>
             </ul>
         </div>

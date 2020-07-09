@@ -15,7 +15,7 @@
         <!-- Slide One - Set the background image for this slide in the line below -->
         <div class="carousel-item active" style="background-image: url('https://source.unsplash.com/LAaSoL0LrYs/1920x1080')">
           <div class="carousel-caption">
-            <h2 class="display-4">Tiket</h2>
+            <h2 class="display-4">{{ config('app.name', 'Laravel') }}</h2>
             <p class="lead d-none d-md-block">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia nesciunt, ipsa tempore molestiae, ex nobis sunt quam error commodi sint magnam cupiditate eius, minus illum reiciendis voluptatum expedita dolorum. Doloremque?</p>
             <br />
             <a href="#section-2">
@@ -26,7 +26,7 @@
         <!-- Slide Two - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('https://source.unsplash.com/bF2vsubyHcQ/1920x1080')">
           <div class="carousel-caption">
-            <h2 class="display-4">Acara Terkini</h2>
+            <h2 class="display-4">{{ __('custom.current events') }}</h2>
             <p class="lead d-none d-md-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat vel ex, voluptas fugit quidem doloremque non dolor eligendi neque architecto quasi maxime inventore veniam, perferendis harum! Ratione fugit deserunt reiciendis.</p>
             <br />
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-outline-neutral btn-round"><i class="fa fa-play"></i>Lihat video</a>
@@ -37,11 +37,11 @@
         </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+            <span class="sr-only">{{ __('previous') }}</span>
           </a>
       <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+            <span class="sr-only">{{ __('next') }}</span>
           </a>
     </div>
 </header>
@@ -50,46 +50,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 ml-auto mr-auto">
-                    <h2 class="title">Acara Terpopuler</h2>
+                    <h2 class="title">{{ __('custom.popular events') }}</h2>
                 </div>
             </div>
             <br/>
             <br/>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="info">
-                        <img src="https://www.thembegroup.com/wp-content/uploads/2016/06/Corporate-Events.jpg" class="img-rounded img-responsive" alt="Rounded Image">
-                        <div class="description">
-                            <h4 class="info-title"><a href="javascript:;" class="btn btn-link" style="font-size: 1em;">Acara 1</a></h4>
-                            <br />
-                            <div class="text-danger mb-3"><i class="fas fa-users"></i> 98</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="info">
-                        <img src="https://financesonline.com/uploads/2017/10/ev.jpg" class="img-rounded img-responsive" alt="Rounded Image">
-                        <div class="description">
-                            <h4 class="info-title"><a href="javascript:;" class="btn btn-link" style="font-size: 1em;">Acara 2</a></h4>
-                            <br />
-                            <div class="text-danger mb-3"><i class="fas fa-users"></i> 36</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="info">
-                        <img src="http://www.newsreader-project.eu/files/2012/12/events.jpg" class="img-rounded img-responsive" alt="..." />
-                        <div class="description">
-                            <h4 class="info-title"><a href="javascript:;" class="btn btn-link" style="font-size: 1em;">Acara 3</a></h4>
-                            <br />
-                            <div class="text-danger mb-3"><i class="fas fa-users"></i> 38</div>
-                        </div>
-                    </div>
-                </div>
+                <x-events size="4" name="Acara 1" img="https://www.thembegroup.com/wp-content/uploads/2016/06/Corporate-Events.jpg" target="#" attendees="98" :date="now()" />
+                <x-events size="4" name="Acara 2" img="https://financesonline.com/uploads/2017/10/ev.jpg" target="#" attendees="36" :date="now()" />
+                <x-events size="4" name="Acara 3" img="http://www.newsreader-project.eu/files/2012/12/events.jpg" target="#" attendees="38" :date="now()" />
             </div>
             <div class="row">
                 <div class="col-md-8 ml-auto mr-auto mt-5">
-                    <a href="#paper-kit" class="btn btn-danger btn-round">Lihat semua acara</a>
+                    <a href="#paper-kit" class="btn btn-danger btn-round">{{ __('custom.more events') }}</a>
                 </div>
             </div>
         </div>

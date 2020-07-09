@@ -7,5 +7,11 @@ return [
     'home' => 'Beranda',
     'login' => 'Masuk',
     'name' => 'Nama',
-    'register' => 'Daftar'
+    'register' => 'Daftar',
+
+    'event' => 'Acara',
+    'all events' => 'Semua Acara',
+    'current events' => 'Acara Terkini',
+    'more events' => 'Lihat Semua Acara',
+    'popular events' => 'Acara Terpopuler',
 ];

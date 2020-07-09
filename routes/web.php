@@ -22,6 +22,7 @@ Auth::routes(['verify' => true]);
 Route::get('/home', 'HomeController@index');
 
 Route::view('/', 'index')->name('home');
+Route::view('/about', 'about')->name('about');
 Route::view('/browse', 'browse')->name('browse');
 Route::view('/login', 'login')->name('login');
 Route::view('/register', 'register')->name('register');

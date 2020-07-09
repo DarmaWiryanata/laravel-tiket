@@ -6,162 +6,49 @@
 
 @section('content')
     <div class="main">
-        <header>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner" role="listbox">
-                <!-- Slide One - Set the background image for this slide in the line below -->
-                <div class="carousel-item-half active" style="background-image: url('https://source.unsplash.com/RCAhiGJsUUE/1920x1080')">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h3 class="display-4">Acara</h3>
-                  </div>
-                </div>
-            </div>
-        </header>
-        <div class="section text-center">
+        <x-header title="{{ __('custom.about') }}" img="https://source.unsplash.com/RCAhiGJsUUE/1920x1080" />
+        <div class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 ml-auto mr-auto">
-                        <h2 class="title">Semua Acara</h2>
+                    <div class="col-md-8 ml-auto mr-auto text-center">
+                        <h2 class="title">{{ __('custom.about us') }}</h2>
+                        <p class="description">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, quam dolores? Quidem obcaecati a natus mollitia, iusto minus doloremque quae quis laboriosam, omnis nihil. Est ut explicabo necessitatibus voluptatum eveniet?
+                        </p>
                     </div>
                 </div>
                 <br/>
                 <br/>
                 <div class="row">
-                    <div class="col-md-3">
-                        <div class="info">
-                            <img src="https://www.thembegroup.com/wp-content/uploads/2016/06/Corporate-Events.jpg" class="img-rounded img-responsive" alt="Rounded Image">
-                            <div class="description">
-                                <h4 class="info-title"><a href="javascript:;" class="btn btn-link" style="font-size: 1em;">Acara 1</a></h4>
-                                <br />
-                                <div class="text-danger"><i class="fas fa-users"></i> 98</div>
-                                <div class="mb-3"><i class="fas fa-calendar-alt"></i> {{ Carbon\Carbon::parse(now())->formatLocalized('%d %B %Y') }}</div>
-                                {{-- <div class="text-danger mb-3"><i class="fas fa-calendar-alt"></i> {{ now()->diffForHumans() }}</div> --}}
+                    <x-about title="{{ __('custom.contact') }}">
+                        <strong>STMIK STIKOM Indonesia</strong>
+                        <p><i class="fas fa-map-marker-alt"></i> Jl. Tukad Pakerisan No.97, Panjer, Kec. Denpasar Sel., Kota Denpasar, Bali 80225</p>
+                        <p><i class="fas fa-phone"></i> 0361 - 256 995 (Hunting)</p>
+                        <p><i class="fas fa-fax"></i> 0361 - 246 875</p>
+                        <p><i class="fas fa-clock"></i> <strong>Senin-Sabtu</strong> 07.00–22.00 WITA</p>
+                    </x-about>
+                    <x-about title="{{ __('custom.location') }}">
+                        <div class="nav-tabs-navigation">
+                            <div class="nav-tabs-wrapper">
+                                <ul id="tabs" class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#google-maps" role="tab">Google Maps</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#waze" role="tab">Waze</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="info">
-                            <img src="https://financesonline.com/uploads/2017/10/ev.jpg" class="img-rounded img-responsive" alt="Rounded Image">
-                            <div class="description">
-                                <h4 class="info-title"><a href="javascript:;" class="btn btn-link" style="font-size: 1em;">Acara 2</a></h4>
-                                <br />
-                                <div class="text-danger"><i class="fas fa-users"></i> 36</div>
-                                <div class="mb-3"><i class="fas fa-calendar-alt"></i> {{ Carbon\Carbon::parse(now())->formatLocalized('%d %B %Y') }}</div>
+                        <div id="my-tab-content" class="tab-content text-center">
+                            <div class="tab-pane active" id="google-maps" role="tabpanel">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.008322333513!2d115.22378221478421!3d-8.690757293755949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2410295f63107%3A0x73208e650f3ba0c9!2sSekolah%20Tinggi%20Ilmu%20Komputer%20Indonesia!5e0!3m2!1sid!2sid!4v1594310544932!5m2!1sid!2sid" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            </div>
+                            <div class="tab-pane" id="waze" role="tabpanel">
+                                <iframe src="https://embed.waze.com/iframe?zoom=16&lat=-8.690784&lon=115.226148&ct=livemap" allowfullscreen></iframe>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="info">
-                            <img src="http://www.newsreader-project.eu/files/2012/12/events.jpg" class="img-rounded img-responsive" alt="..." />
-                            <div class="description">
-                                <h4 class="info-title"><a href="javascript:;" class="btn btn-link" style="font-size: 1em;">Acara 3</a></h4>
-                                <br />
-                                <div class="text-danger"><i class="fas fa-users"></i> 38</div>
-                                <div class="mb-3"><i class="fas fa-calendar-alt"></i> {{ Carbon\Carbon::parse(now())->formatLocalized('%d %B %Y') }}</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="info">
-                            <img src="https://avenueevents.co.uk/wp-content/uploads/2015/09/fragrance-training-conference-5.jpg" class="img-rounded img-responsive" alt="..." />
-                            <div class="description">
-                                <h4 class="info-title"><a href="javascript:;" class="btn btn-link" style="font-size: 1em;">Acara 4</a></h4>
-                                <br />
-                                <div class="text-danger"><i class="fas fa-users"></i> 19</div>
-                                <div class="mb-3"><i class="fas fa-calendar-alt"></i> {{ Carbon\Carbon::parse(now())->formatLocalized('%d %B %Y') }}</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="info">
-                            <img src="https://www.thembegroup.com/wp-content/uploads/2016/06/Corporate-Events.jpg" class="img-rounded img-responsive" alt="Rounded Image">
-                            <div class="description">
-                                <h4 class="info-title"><a href="javascript:;" class="btn btn-link" style="font-size: 1em;">Acara 1</a></h4>
-                                <br />
-                                <div class="text-danger"><i class="fas fa-users"></i> 98</div>
-                                <div class="mb-3"><i class="fas fa-calendar-alt"></i> {{ Carbon\Carbon::parse(now())->formatLocalized('%d %B %Y') }}</div>
-                                {{-- <div class="text-danger mb-3"><i class="fas fa-calendar-alt"></i> {{ now()->diffForHumans() }}</div> --}}
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="info">
-                            <img src="https://financesonline.com/uploads/2017/10/ev.jpg" class="img-rounded img-responsive" alt="Rounded Image">
-                            <div class="description">
-                                <h4 class="info-title"><a href="javascript:;" class="btn btn-link" style="font-size: 1em;">Acara 2</a></h4>
-                                <br />
-                                <div class="text-danger"><i class="fas fa-users"></i> 36</div>
-                                <div class="mb-3"><i class="fas fa-calendar-alt"></i> {{ Carbon\Carbon::parse(now())->formatLocalized('%d %B %Y') }}</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="info">
-                            <img src="http://www.newsreader-project.eu/files/2012/12/events.jpg" class="img-rounded img-responsive" alt="..." />
-                            <div class="description">
-                                <h4 class="info-title"><a href="javascript:;" class="btn btn-link" style="font-size: 1em;">Acara 3</a></h4>
-                                <br />
-                                <div class="text-danger"><i class="fas fa-users"></i> 38</div>
-                                <div class="mb-3"><i class="fas fa-calendar-alt"></i> {{ Carbon\Carbon::parse(now())->formatLocalized('%d %B %Y') }}</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="info">
-                            <img src="https://avenueevents.co.uk/wp-content/uploads/2015/09/fragrance-training-conference-5.jpg" class="img-rounded img-responsive" alt="..." />
-                            <div class="description">
-                                <h4 class="info-title"><a href="javascript:;" class="btn btn-link" style="font-size: 1em;">Acara 4</a></h4>
-                                <br />
-                                <div class="text-danger"><i class="fas fa-users"></i> 19</div>
-                                <div class="mb-3"><i class="fas fa-calendar-alt"></i> {{ Carbon\Carbon::parse(now())->formatLocalized('%d %B %Y') }}</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="info">
-                            <img src="https://www.thembegroup.com/wp-content/uploads/2016/06/Corporate-Events.jpg" class="img-rounded img-responsive" alt="Rounded Image">
-                            <div class="description">
-                                <h4 class="info-title"><a href="javascript:;" class="btn btn-link" style="font-size: 1em;">Acara 1</a></h4>
-                                <br />
-                                <div class="text-danger"><i class="fas fa-users"></i> 98</div>
-                                <div class="mb-3"><i class="fas fa-calendar-alt"></i> {{ Carbon\Carbon::parse(now())->formatLocalized('%d %B %Y') }}</div>
-                                {{-- <div class="text-danger mb-3"><i class="fas fa-calendar-alt"></i> {{ now()->diffForHumans() }}</div> --}}
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="info">
-                            <img src="https://financesonline.com/uploads/2017/10/ev.jpg" class="img-rounded img-responsive" alt="Rounded Image">
-                            <div class="description">
-                                <h4 class="info-title"><a href="javascript:;" class="btn btn-link" style="font-size: 1em;">Acara 2</a></h4>
-                                <br />
-                                <div class="text-danger"><i class="fas fa-users"></i> 36</div>
-                                <div class="mb-3"><i class="fas fa-calendar-alt"></i> {{ Carbon\Carbon::parse(now())->formatLocalized('%d %B %Y') }}</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="info">
-                            <img src="http://www.newsreader-project.eu/files/2012/12/events.jpg" class="img-rounded img-responsive" alt="..." />
-                            <div class="description">
-                                <h4 class="info-title"><a href="javascript:;" class="btn btn-link" style="font-size: 1em;">Acara 3</a></h4>
-                                <br />
-                                <div class="text-danger"><i class="fas fa-users"></i> 38</div>
-                                <div class="mb-3"><i class="fas fa-calendar-alt"></i> {{ Carbon\Carbon::parse(now())->formatLocalized('%d %B %Y') }}</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="info">
-                            <img src="https://avenueevents.co.uk/wp-content/uploads/2015/09/fragrance-training-conference-5.jpg" class="img-rounded img-responsive" alt="..." />
-                            <div class="description">
-                                <h4 class="info-title"><a href="javascript:;" class="btn btn-link" style="font-size: 1em;">Acara 4</a></h4>
-                                <br />
-                                <div class="text-danger"><i class="fas fa-users"></i> 19</div>
-                                <div class="mb-3"><i class="fas fa-calendar-alt"></i> {{ Carbon\Carbon::parse(now())->formatLocalized('%d %B %Y') }}</div>
-                            </div>
-                        </div>
-                    </div>
+                    </x-about>
                 </div>
             </div>
         </div>

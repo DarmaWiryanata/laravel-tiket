@@ -19,7 +19,7 @@
                     <a href="{{ route('browse') }}" class="nav-link"><i class="fas fa-search d-lg-none"></i> {{ __('custom.browse') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link"><i class="fas fa-info-circle d-lg-none"></i> {{ __('custom.about') }}</a>
+                    <a href="{{ route('about') }}" class="nav-link"><i class="fas fa-info-circle d-lg-none"></i> {{ __('custom.about') }}</a>
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('login') }}" class="nav-link"><i class="fas fa-sign-in-alt d-lg-none"></i> {{ __('custom.login') }}</a>

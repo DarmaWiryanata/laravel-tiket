@@ -14,6 +14,7 @@
         <!-- CSS Files -->
         <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" />
         <link href="{{ asset('css/paper-kit.css') }}" rel="stylesheet" />
+        
         @yield('css')
     </head>
     <body>
@@ -40,4 +41,6 @@
 
     <!--  Paper Kit Initialization snd functons -->
     <script src="{{ asset('js/paper-kit.js') }}"></script>
+
+    @yield('js')
 </html>

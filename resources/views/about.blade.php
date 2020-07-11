@@ -22,10 +22,32 @@
                 <div class="row">
                     <x-about title="{{ __('custom.contact') }}">
                         <strong>STMIK STIKOM Indonesia</strong>
-                        <p><i class="fas fa-map-marker-alt"></i> Jl. Tukad Pakerisan No.97, Panjer, Kec. Denpasar Sel., Kota Denpasar, Bali 80225</p>
-                        <p><i class="fas fa-phone"></i> 0361 - 256 995 (Hunting)</p>
-                        <p><i class="fas fa-fax"></i> 0361 - 246 875</p>
-                        <p><i class="fas fa-clock"></i> <strong>Senin-Sabtu</strong> 07.00–22.00 WITA</p>
+                        <div class="row">
+                            <div class="col-1 pr-0">
+                                <p><i class="fas fa-map-marker-alt"></i></p>
+                            </div>
+                            <div class="col-11 pl-0">
+                                <p>Jl. Tukad Pakerisan No.97, Panjer, Kec. Denpasar Sel., Kota Denpasar, Bali 80225</p>
+                            </div>
+                            <div class="col-1 pr-0">
+                                <p><i class="fas fa-phone"></i></p>
+                            </div>
+                            <div class="col-11 pl-0">
+                                <p>0361 - 256 995 (Hunting)</p>
+                            </div>
+                            <div class="col-1 pr-0">
+                                <p><i class="fas fa-fax"></i></p>
+                            </div>
+                            <div class="col-11 pl-0">
+                                <p>0361 - 246 875</p>
+                            </div>
+                            <div class="col-1 pr-0">
+                                <p><i class="fas fa-clock"></i></p>
+                            </div>
+                            <div class="col-11 pl-0">
+                                <p><strong>Senin-Sabtu</strong> 07.00–22.00 WITA</p>
+                            </div>
+                        </div>
                     </x-about>
                     <x-about title="{{ __('custom.location') }}">
                         <div class="nav-tabs-navigation">

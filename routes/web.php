@@ -25,4 +25,5 @@ Route::view('/', 'index')->name('home');
 Route::view('/about', 'about')->name('about');
 Route::view('/browse', 'browse')->name('browse');
 Route::view('/login', 'login')->name('login');
+Route::view('/single', 'single')->name('single');
 Route::view('/register', 'register')->name('register');

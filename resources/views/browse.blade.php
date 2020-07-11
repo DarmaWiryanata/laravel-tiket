@@ -17,18 +17,18 @@
                 <br/>
                 <br/>
                 <div class="row">
-                    <x-events size="3" name="Acara 1" img="https://www.thembegroup.com/wp-content/uploads/2016/06/Corporate-Events.jpg" target="#" attendees="98" date="{{ now() }}" />
-                    <x-events size="3" name="Acara 2" img="https://financesonline.com/uploads/2017/10/ev.jpg" target="#" attendees="36" date="{{ now() }}" />
-                    <x-events size="3" name="Acara 3" img="http://www.newsreader-project.eu/files/2012/12/events.jpg" target="#" attendees="38" date="{{ now() }}" />
+                    <x-events size="3" name="Acara 1" img="https://www.thembegroup.com/wp-content/uploads/2016/06/Corporate-Events.jpg" :target="route('single')"  attendees="98" date="{{ now() }}" />
+                    <x-events size="3" name="Acara 2" img="https://financesonline.com/uploads/2017/10/ev.jpg" :target="route('single')"  attendees="36" date="{{ now() }}" />
+                    <x-events size="3" name="Acara 3" img="http://www.newsreader-project.eu/files/2012/12/events.jpg" :target="route('single')"  attendees="38" date="{{ now() }}" />
+                    <x-events size="3" name="Acara 4" img="https://avenueevents.co.uk/wp-content/uploads/2015/09/fragrance-training-conference-5.jpg" :target="route('single')"  attendees="19" date="{{ now() }}" />
+                    <x-events size="3" name="Acara 1" img="https://www.thembegroup.com/wp-content/uploads/2016/06/Corporate-Events.jpg" :target="route('single')"  attendees="98" date="{{ now() }}" />
+                    <x-events size="3" name="Acara 2" img="https://financesonline.com/uploads/2017/10/ev.jpg" :target="route('single')"  attendees="36" date="{{ now() }}" />
+                    <x-events size="3" name="Acara 3" img="http://www.newsreader-project.eu/files/2012/12/events.jpg" :target="route('single')"  attendees="38" date="{{ now() }}" />
                     <x-events size="3" name="Acara 4" img="https://avenueevents.co.uk/wp-content/uploads/2015/09/fragrance-training-conference-5.jpg" target="#" attendees="19" date="{{ now() }}" />
-                    <x-events size="3" name="Acara 1" img="https://www.thembegroup.com/wp-content/uploads/2016/06/Corporate-Events.jpg" target="#" attendees="98" date="{{ now() }}" />
-                    <x-events size="3" name="Acara 2" img="https://financesonline.com/uploads/2017/10/ev.jpg" target="#" attendees="36" date="{{ now() }}" />
-                    <x-events size="3" name="Acara 3" img="http://www.newsreader-project.eu/files/2012/12/events.jpg" target="#" attendees="38" date="{{ now() }}" />
-                    <x-events size="3" name="Acara 4" img="https://avenueevents.co.uk/wp-content/uploads/2015/09/fragrance-training-conference-5.jpg" target="#" attendees="19" date="{{ now() }}" />
-                    <x-events size="3" name="Acara 1" img="https://www.thembegroup.com/wp-content/uploads/2016/06/Corporate-Events.jpg" target="#" attendees="98" date="{{ now() }}" />
-                    <x-events size="3" name="Acara 2" img="https://financesonline.com/uploads/2017/10/ev.jpg" target="#" attendees="36" date="{{ now() }}" />
-                    <x-events size="3" name="Acara 3" img="http://www.newsreader-project.eu/files/2012/12/events.jpg" target="#" attendees="38" date="{{ now() }}" />
-                    <x-events size="3" name="Acara 4" img="https://avenueevents.co.uk/wp-content/uploads/2015/09/fragrance-training-conference-5.jpg" target="#" attendees="19" date="{{ now() }}" />
+                    <x-events size="3" name="Acara 1" img="https://www.thembegroup.com/wp-content/uploads/2016/06/Corporate-Events.jpg" :target="route('single')"  attendees="98" date="{{ now() }}" />
+                    <x-events size="3" name="Acara 2" img="https://financesonline.com/uploads/2017/10/ev.jpg" :target="route('single')"  attendees="36" date="{{ now() }}" />
+                    <x-events size="3" name="Acara 3" img="http://www.newsreader-project.eu/files/2012/12/events.jpg" :target="route('single')"  attendees="38" date="{{ now() }}" />
+                    <x-events size="3" name="Acara 4" img="https://avenueevents.co.uk/wp-content/uploads/2015/09/fragrance-training-conference-5.jpg" :target="route('single')"  attendees="19" date="{{ now() }}" />
                 </div>
             </div>
         </div>

@@ -27,3 +27,4 @@ Route::view('/browse', 'browse')->name('browse');
 Route::view('/login', 'login')->name('login');
 Route::view('/single', 'single')->name('single');
 Route::view('/register', 'register')->name('register');
+Route::view('/user', 'user')->name('user');

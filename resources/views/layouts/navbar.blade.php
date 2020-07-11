@@ -22,6 +22,9 @@
                     <a href="{{ route('about') }}" class="nav-link"><i class="fas fa-info-circle d-lg-none"></i> {{ __('custom.about') }}</a>
                 </li>
                 <li class="nav-item">
+                    <a href="{{ route('user') }}" class="nav-link"><i class="fas fa-user d-lg-none"></i> Pengguna</a>
+                </li>
+                <li class="nav-item">
                     <a href="{{ route('login') }}" class="nav-link"><i class="fas fa-sign-in-alt d-lg-none"></i> {{ __('custom.login') }}</a>
                 </li>
                 <li class="nav-item">

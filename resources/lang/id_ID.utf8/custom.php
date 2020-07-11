@@ -1,28 +1,51 @@
 <?php
 
 return [
+    'account' => 'Akun',
+    'billing' => 'Pembayaran',
+    'birthday' => 'Tanggal Lahir',
     'browse' => 'Telusuri',
     'contact' => 'Hubungi Kami',
     'contact person' => 'Nara Hubung',
     'deadline' => 'Batas Pemesanan',
     'detail' => 'Detail',
     'execution' => 'Waktu Pelaksanaan',
+    'expired' => 'Tanggal Kadaluwarsa',
     'forgot' => 'Lupa password',
     'free' => 'Gratis',
     'home' => 'Beranda',
     'location' => 'Lokasi',
     'login' => 'Masuk',
     'name' => 'Nama',
+    'no ticket' => 'Kamu belum memiliki tiket',
     'organizer' => 'Penyelenggara',
+    'pay now' => 'Bayar sekarang',
+    'phone' => 'Nomor Ponsel',
+    'print' => 'Cetak E-sertifikat',
     'register' => 'Daftar',
+    'ticket' => 'Tiket',
+    'user panel' => 'Panel Pengguna',
     
+    'about' => 'Tentang',
+    'about us' => 'Tentang Kami',
+
+    'change profile' => 'Ubah Profil',
+    'change password' => 'Ubah Password',
+
     'event' => 'Acara',
     'event detail' => 'Detail Acara',
     'all events' => 'Semua Acara',
     'current events' => 'Acara Terkini',
     'more events' => 'Lihat Semua Acara',
     'popular events' => 'Acara Terpopuler',
-    
-    'about' => 'Tentang',
-    'about us' => 'Tentang Kami',
+
+    'new password' => 'Kata Sandi Baru',
+    'confirm password' => 'Ulangi Kata Sandi Baru',
+    'current password' => 'Kata Sandi Sekarang',
+
+    'placeholder confirm password' => 'Ulangi kata sandi baru',
+    'placeholder birthday' => 'Tanggal Lahir',
+    'placeholder name' => 'Nama untuk e-sertifikat',
+    'placeholder new password' => 'Kata sandi baru',
+    'placeholder phone' => 'Nomor ponsel',
 ];

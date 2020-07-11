@@ -3,10 +3,10 @@
 @section('content')
     <div class="page-header" style="background-image: url({{ asset('img/login-image.jpg') }});">
         <div class="filter"></div>
-        <div class="container text-center-middle mt-5" style="padding-left: 30px;">
+        <div class="container text-center-middle mt-5">
             <div class="row">
-                <div class="col-lg-4 ml-auto mr-auto">
-                    <div class="card card-register">
+                <div class="col-lg-4 mx-auto">
+                    <div class="card card-register mx-auto">
                         <h3 class="title mx-auto">{{ __('custom.login') }}</h3>
                         <form class="register-form">
                             <label>Email</label>

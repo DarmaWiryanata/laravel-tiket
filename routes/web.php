@@ -28,3 +28,5 @@ Route::view('/login', 'login')->name('login');
 Route::view('/single', 'single')->name('single');
 Route::view('/register', 'register')->name('register');
 Route::view('/user', 'user')->name('user');
+
+Route::get('/pay/midtrans', 'Midtrans\MidtransController@getSnapToken');

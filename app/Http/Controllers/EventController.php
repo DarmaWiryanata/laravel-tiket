@@ -12,7 +12,7 @@ class EventController extends Controller
     {
         $client = new Client();
         try {
-            $res = $client->request('GET', 'http://api.tiket.kataback.com/pay', []);
+            $res = $client->request('GET', env("MIDTRANS_API"), []);
             $data = json_decode($res->getBody()->getContents());
             // dd($data);
             return view('single', ['token' => $data->token]);

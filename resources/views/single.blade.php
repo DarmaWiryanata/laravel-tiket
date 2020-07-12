@@ -22,7 +22,7 @@
                             <strong>{{ __('custom.free') }}</strong>
                         </h4>
                         <div class="text-danger mt-3 mb-3"><i class="fas fa-users"></i> 98</div>
-                        <div class="btn btn-danger btn-round w-100"><i class="far fa-hand-point-up"></i> Beli</div>
+                        <div id="pay-button" class="btn btn-danger btn-round w-100"><i class="far fa-hand-point-up"></i> Beli</div>
                     </div>
                 </div>
                 <br/>
@@ -68,4 +68,27 @@
         </div>
     </div>
     @include('layouts.footer')
+@endsection
+
+@section('js')
+    <script src="https://app.midtrans.com/snap/snap.js" data-client-key="Mid-client-0qQsBkr6dnwDIEgx"></script>
+    <script type="text/javascript">
+        document.getElementById('pay-button').onclick = function(){
+            // SnapToken acquired from previous step
+            snap.pay('{{ $token }}', {
+                // Optional
+                onSuccess: function(result){
+                    document.getElementById('result-json').innerHTML += JSON.stringify(result, null, 2);
+                },
+                // Optional
+                onPending: function(result){
+                    document.getElementById('result-json').innerHTML += JSON.stringify(result, null, 2);
+                },
+                // Optional
+                onError: function(result){
+                    document.getElementById('result-json').innerHTML += JSON.stringify(result, null, 2);
+                }
+            });
+        };
+    </script>
 @endsection

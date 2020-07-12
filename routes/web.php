@@ -25,8 +25,8 @@ Route::view('/', 'index')->name('home');
 Route::view('/about', 'about')->name('about');
 Route::view('/browse', 'browse')->name('browse');
 Route::view('/login', 'login')->name('login');
-Route::view('/single', 'single')->name('single');
 Route::view('/register', 'register')->name('register');
 Route::view('/user', 'user')->name('user');
 
+Route::get('/single', 'EventController@single')->name('single');
 Route::get('/pay/midtrans', 'Midtrans\MidtransController@getSnapToken');

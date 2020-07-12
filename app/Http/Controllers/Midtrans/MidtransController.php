@@ -27,7 +27,7 @@ class MidtransController extends Controller
     {
         $item_list = array();
         $amount = 0;
-        Config::$serverKey = 'Mid-server-d9W7BKLpTYzoiin1syudEbxW';
+        Config::$serverKey = env("MIDTRANS_SERVER_KEY");
         if (!isset(Config::$serverKey)) {
             return "Please set your payment server key";
         }
@@ -44,7 +44,7 @@ class MidtransController extends Controller
             'id' => "123",
             'price' => 20000,
             'quantity' => 1,
-            'name' => "Acara 1"
+            'name' => "Acara"
         ];
 
         $transaction_details = array(
